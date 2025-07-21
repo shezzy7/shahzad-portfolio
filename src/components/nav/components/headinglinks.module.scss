@@ -1,0 +1,47 @@
+// .links {
+//   display: flex;
+//   gap: 1.6rem;
+//   padding-top: 10px;
+
+//   a {
+//     opacity: 0.5;
+//     position: relative;
+//     z-index: 20;
+//   }
+
+//   a:hover {
+//     color: var(--brand);
+//     opacity: 1;
+//   }
+// }
+
+.links {
+  display: flex;
+  gap: 1.6rem;
+  padding-top: 10px;
+  flex-wrap: wrap; // allow wrapping on smaller screens
+
+  a {
+    opacity: 0.5;
+    position: relative;
+    z-index: 20;
+    transition: 0.2s ease;
+  }
+
+  a:hover {
+    color: var(--brand);
+    opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 0.8rem;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
