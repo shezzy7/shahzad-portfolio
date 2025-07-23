@@ -14,7 +14,7 @@ export const Hero = () => {
         </Reveal>
         <Reveal>
           <h2 className={styles.subTitle}>
-            I&apos;m an <span>AI Full Stack Engineer</span>
+            <span>AI Full Stack Engineer</span>
           </h2>
         </Reveal>
         <Reveal>
