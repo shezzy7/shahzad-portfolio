@@ -59,34 +59,6 @@ const projects = [
     ),
   },
   {
-    title: "Talk with Your PDF",
-    imgSrc: "assets/img/talkpdf.png",
-    code: "https://github.com/numanabubakar",
-    projectLink: "https://askfrompdf.streamlit.app/",
-    tech: ["Python", "FastAPI", "Streamlit", "LangChain", "FAISS", "OpenAI"],
-    description:
-      "A PDF-based AI assistant enabling users to upload documents and interact with them conversationally using semantic search.",
-    modalContent: (
-      <>
-        <p>
-          Developed a sophisticated PDF-based AI assistant that enables users to upload documents and interact with them conversationally, providing instant access to document content through natural language queries.
-        </p>
-        <p>
-          Built with Streamlit for an intuitive and responsive user interface, combined with FastAPI for robust backend processing. Utilized LangChain for sophisticated prompt orchestration and OpenAI models for natural language responses.
-        </p>
-        <p>
-          Integrated FAISS (Facebook AI Similarity Search) for efficient document embedding and semantic retrieval, enabling fast and accurate search across large document collections.
-        </p>
-        <p>
-          Implemented a conversational chat interface that allows users to ask questions directly from uploaded PDFs, with the system providing contextually relevant answers based on document content.
-        </p>
-        <p>
-          The system supports multiple document formats and provides real-time processing, making it ideal for research, document analysis, and knowledge extraction from large text corpora.
-        </p>
-      </>
-    ),
-  },
-  {
     title: "AI Roaster",
     imgSrc: "assets/img/roast.png",
     code: "https://github.com/shezzy7/roastbot",
