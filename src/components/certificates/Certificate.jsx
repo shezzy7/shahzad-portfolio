@@ -1,8 +1,8 @@
 import { Reveal } from "../utils/Reveal";
 import { useAnimation, useInView, motion } from "framer-motion";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
-import {  AiOutlineExport } from "react-icons/ai";
+import { AiOutlineExport } from "react-icons/ai";
 import { CertificateModel } from "./CertificateModel";
 import styles from "./certificates.module.scss";
 
@@ -34,8 +34,19 @@ export const Certificate = ({
 
   return (
     <>
+      {/* <motion.div
+        ref={ref}
+        variants={{
+          hidden: { opacity: 0, y: 100 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        animate={controls}
+        transition={{ duration: 0.75 }}
+      > */}
       <motion.div
         ref={ref}
+        style={{ maxWidth: "300px" }} // ✅ limits certificate size without CSS file changes
         variants={{
           hidden: { opacity: 0, y: 100 },
           visible: { opacity: 1, y: 0 },
@@ -65,12 +76,13 @@ export const Certificate = ({
               <h4>{title}</h4>
               <div className={styles.certificateTitleLine} />
 
-
-             
-              <a href={certificateLink} target="_blank" rel="noopener noreferrer">
+              <a
+                href={certificateLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <AiOutlineExport size="2.8rem" />
-                </a>
-
+              </a>
             </div>
           </Reveal>
           <Reveal>
